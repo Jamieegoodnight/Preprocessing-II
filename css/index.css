@@ -320,3 +320,16 @@ header nav a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #17A2B8;
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

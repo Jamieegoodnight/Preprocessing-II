@@ -113,7 +113,11 @@
       }
 
       .btn {
-        .for-btn(210px, 30px, white)
+        .for-btn(210px, 30px, white);
+
+        @media @mobile {
+          .for-btn(280px, 30px, white);
+        }
       }
     }
   }
