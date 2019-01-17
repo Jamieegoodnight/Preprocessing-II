@@ -208,6 +208,19 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .welcome .banner {
+  padding-bottom: 2%;
+}
+.home .welcome .welcome-text {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .home .welcome {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .home .content-section {
   margin-bottom: 30px 0;
   display: flex;
@@ -216,25 +229,34 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home .content-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-}
-.home .content-section .banner {
-  padding-bottom: 1%;
-}
-.home .content-section .welcome-text {
-  border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 1%;
 }
 .home .content-section .text-content {
   width: 48%;
   padding-top: 30px;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-top: 30px;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -242,6 +264,12 @@ header nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -282,7 +310,7 @@ header nav a {
   }
 }
 .home .content-pick .destination .btn {
-  width: 200px;
+  width: 300px;
   height: 30px;
   border-radius: 10px;
   background-color: #17A2B8;
