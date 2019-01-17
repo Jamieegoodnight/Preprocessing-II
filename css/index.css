@@ -131,7 +131,6 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-color: red;
 }
 html,
 body {
@@ -169,6 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header nav {
+  margin-left: 380px;
+  padding-top: 1%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  margin: 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -181,17 +197,26 @@ img {
   padding: 20px;
 }
 .home .content-section {
-  margin: 30px 0;
+  margin-bottom: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section .banner {
+  padding-bottom: 1%;
+}
+.home .content-section .welcome-text {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 1%;
+}
 .home .content-section .text-content {
   width: 48%;
+  padding-top: 30px;
   padding-right: 1%;
 }
 .home .content-section .img-content {
   width: 48%;
+  padding-top: 30px;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
@@ -212,6 +237,7 @@ img {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+  padding-top: 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -225,4 +251,15 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #17A2B8;
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
