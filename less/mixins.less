@@ -1,1 +1,21 @@
 // Mixins in here
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for-btn(@width, @height, @color){
+    width: @width;
+    height: @height;
+    border-radius: 10px;
+    background-color: @button-bg;
+    color: @color;
+    font-size: 1.6rem;
+    cursor: crosshair;
+    .center();
+
+}
+
+@mobile: ~"(max-width: 500px)";
